@@ -1,0 +1,54 @@
+.footer-icon{
+	font-size: 4rem;
+}
+
+.footer a{
+	color: white;
+}
+
+.footer a:hover{
+	color: $site-red;
+}
+
+.footer{	
+	color: white;
+	font-weight: lighter;
+	background-image: url("../img/footer-bg.jpg");
+	width: 100%;
+}
+
+.main-footer{
+	overflow: hidden;
+	padding: 3em  0;	
+}
+
+.main-footer p{
+	float: right;
+	width: 75%;
+	line-height: 1.5rem;
+	letter-spacing: .1rem;
+		   @include breakpoint (largemarge){
+	 		float: none;
+	 		width: 100%;
+	 		font-size: .9rem;
+	 }
+}
+
+.footer-logo-wrapper{
+	text-align: center;
+	float: left;
+	width: 25%;
+		   @include breakpoint (largemarge){
+	 		float: none;
+	 		width: 100%;
+	 		margin-bottom: 2em;
+	 }
+}
+
+.sub-footer{
+	font-size: 1.2rem;
+	padding: .5em 0;
+	background: rgba(0,0,0,0.85);
+	& a{ color: $site-red;
+	}
+}

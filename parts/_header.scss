@@ -1,0 +1,46 @@
+
+
+.header{
+	border-top: solid black 1em;	
+  text-align: center;    
+  font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  letter-spacing: .15rem;
+  padding: .5em 0;
+}
+
+.logo-box{
+	display: inline-block;	
+}
+
+.header-icon{
+	font-size: 4rem;
+}
+
+.header a{
+	color: black;
+	&:hover{
+		color: $site-red;
+	}
+}
+
+.header-sub-title{
+	font-weight: lighter;
+}
+
+.page-intro-bar{
+	background-color: $site-red;
+	padding: .9em 0;
+	border-bottom: 5px solid #a75150;
+	font-size: 1.5rem;
+	color: #ffffff;
+	letter-spacing: .15rem;
+		@include breakpoint (tiny){
+		 font-size: 1rem;		
+	}
+}
+
+.page-intro-title{
+	display: inline;	
+	font-weight: lighter;
+
+}

@@ -1,0 +1,19 @@
+/*------------------------------------*\
+    variables.scss
+\*------------------------------------*/
+
+$site-red: #bf605f;
+$site-grey: #dbdbdb;
+
+@mixin breakpoint($point){
+	@if $point == tiny {
+		@media (max-width: 560px) { @content; }
+	}
+		@else if $point == medium {
+		@media (max-width: 890px) { @content; }
+	}
+		@else if $point == largemarge {
+		@media (max-width: 675px) { @content; }
+	}
+
+}

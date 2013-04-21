@@ -1,0 +1,130 @@
+/*------------------------------------*\
+   styles.scss
+   I use this for main styles until I break it up later down the line.
+\*------------------------------------*/
+
+
+
+body{
+	font-family: sans-serif;
+}
+
+a{
+	color: $site-red;
+}
+
+iframe{
+	display: block;
+	margin: 0 auto;
+}
+
+.constrained{
+	max-width: 1124px;
+	margin: 0 auto;
+	padding: 0 .5em;
+}
+
+.main-content{
+	padding: 2em 0;	
+}
+
+.video-box{
+	display:inline-block;
+	margin: 1em .5em;
+	padding-bottom: 1em;
+	border-bottom: 1px solid $site-grey;
+}
+
+.video:hover{
+	outline: 4px solid $site-red;
+	line-height: 0;
+}
+
+.video-title{
+	padding: .5em 0;
+}
+
+.video-title > a{
+	color: black;
+	&:hover{
+		color: $site-red;
+	}
+}
+
+.course-info-box{
+	overflow: hidden;
+	padding: 2em 0 4em 0;
+		@include breakpoint (tiny){
+	 padding: 1em;
+	 }
+}
+
+.primary-course-info{
+	float: left;
+	width: 66.6%;
+	   @include breakpoint (largemarge){
+ 		float: none;
+ 		width: 100%;
+ }
+}
+
+.course-title{
+	padding: .75em 0;
+}
+
+.chapter-title{
+	padding: .75em 0;
+}
+
+.primary-course-info > p{
+	line-height: 1.5rem;
+}
+
+.secondary-course-info{
+	float: right;
+	width: 33.3%;
+	padding: .5em 1em 0 1em;
+	   @include breakpoint (largemarge){
+	 		float: none;
+	 		width: 100%;
+	 		padding: .5em;
+	 }
+}
+
+.meta-title{
+	padding: .75em 0;
+}
+
+.course-meta > li{
+	padding: .5em 0;
+	border-bottom: 1px solid $site-grey;
+}
+
+.btn{
+	background-color: $site-red;
+	border: 0;
+	padding: .5em 1em;
+	font-size: 1.5rem;
+		@include breakpoint (tiny){
+		 font-size: 1rem;
+		 margin: 0 1.5em;
+		 }
+	& > a{ 
+	color: white;
+
+	}
+	& > a:hover{
+	color: black;
+	}
+}
+
+.btn-right{
+	float: right;
+}
+
+///to include breakpoint use this include
+
+
+ //    @include breakpoint (largemarge){
+	// 	color: red;
+	// }

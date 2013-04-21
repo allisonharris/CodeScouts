@@ -1,0 +1,27 @@
+/*------------------------------------*\
+    global.CSS
+\*------------------------------------*/
+
+/*
+ * Setup - importing my helper files, which I'll turn on as needed
+ */
+@import "helpers/normalize";
+@import "helpers/reset";
+@import "helpers/clearfix";
+@import "helpers/images";
+@import "helpers/links";
+
+
+// @import "helpers/debug";
+
+
+/**
+ * Begin importing files here 
+**/
+@import "parts/variables";
+@import "parts/header";
+@import "parts/fonts";
+@import "parts/styles";
+@import "parts/footer";
+
+
